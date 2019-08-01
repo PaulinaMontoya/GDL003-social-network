@@ -13,7 +13,7 @@ const mostrarMuroFb = () => {
     muro.style.display = "block";
     logIn.style.display = "none";
     registro.style.display = "none";
-    window.guanataco.loginFacebook(); 
+    loginFacebook(); 
     // window.guanataco.printPosts(); 
 }
 document.getElementById("Facebook").addEventListener("click", mostrarMuroFb);
@@ -24,7 +24,7 @@ const mostrarMuroGoogle = () => {
   muro.style.display = "block";
   logIn.style.display = "none";
   registro.style.display = "none";
-  window.guanataco.loginGoogle(); 
+  loginGoogle(); 
   // window.guanataco.printPosts();
 }
 document.getElementById("google").addEventListener("click", loginGoogle);
@@ -40,11 +40,11 @@ const mostrarMuro = () => {
 };
 */
 const regresarLogin = () => {
-  window.guanataco.logout();
   logIn.style.display = "block";
   menu.style.display = "none";
   muro.style.display = "none";
   registro.style.display = "none";
+  logout();
 };
 
 document.getElementById("cerrarSesion").addEventListener("click", regresarLogin);

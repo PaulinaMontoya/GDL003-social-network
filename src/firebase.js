@@ -255,6 +255,7 @@ const logout = () => {
     });
 };
 
+/*
 window.guanataco = {
     loginGoogle,
     logout,
@@ -262,3 +263,4 @@ window.guanataco = {
     posts,
     // printPosts
 };
+*/
